@@ -50,14 +50,14 @@ async def start(bot, update):
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = caption,
+                caption = f"{file_name} \n @MM_CINEMA_CLCLUB
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/M_STER_TECH"
+                                    '💠 Join Main Channel 💠', url="https://t.me/MM_CINEMA_CLUB"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/M_STER_TECH"
+                                    '💠 Join Main Channel 💠', url="https://t.me/MM_CINEMA_CLUB"
                                 )
                         ]
                     ]
@@ -89,10 +89,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/M_STER_TECH'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/M-STER-YT/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('Owner 👨‍💼', url='https://t.me/cinemaclubcc'),
+        InlineKeyboardButton('UPDATE CHANNEL 📺', url ='https://t.me/MM_CINEMA_CLUB')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/M_SRER_TECH_GROUP')
+        InlineKeyboardButton('Support Group 👥', url='https://t.me/Moviez_group_mg')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
